@@ -50,7 +50,6 @@ namespace HandsOnPlugin
             }
             throw new NotImplementedException();
         }
-        //Crm connection 
     }
 
 }

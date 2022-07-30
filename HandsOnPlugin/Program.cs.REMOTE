@@ -16,7 +16,7 @@ namespace HandsOnPlugin
             // Obtain the tracing service
             ITracingService tracingService =
             (ITracingService)serviceProvider.GetService(typeof(ITracingService));
-
+            
             // Obtain the execution context from the service provider.  
             IPluginExecutionContext context = (IPluginExecutionContext)
                 serviceProvider.GetService(typeof(IPluginExecutionContext));
@@ -35,6 +35,7 @@ namespace HandsOnPlugin
 
                 try
                 {
+                    //AAA check plugin process and check S
                     // Plug-in business logic goes here.  
                 }
                 catch (FaultException<OrganizationServiceFault> ex)
@@ -50,7 +51,6 @@ namespace HandsOnPlugin
             }
             throw new NotImplementedException();
         }
-        //Crm connection 
     }
 
 }
